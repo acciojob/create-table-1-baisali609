@@ -1,11 +1,6 @@
 function insert_Row() {
     //Write your code here
       let table = document.getElementById("sampleTable");
-
-	if (!table) {
-        console.error("Table with ID 'sampleTable' not found.");
-        return;
-    }
 	
 	let row1 = table.insertRow(0);
     let cell1 = row1.insertCell(0);
@@ -14,5 +9,4 @@ function insert_Row() {
     cell1.textContent = "New Cell1";
     cell2.textContent = "New Cell2";
 
-	console.log("Rows in table:", table.rows.length);
 }
